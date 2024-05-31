@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <script>
+     function change(){
+    let h1=document.getElementsByTagName("div");
+    // let h1=document.getElementById("h");
+    h1[1].style.display="none";
+}
+function dis(){
+    let h1=document.getElementsByTagName("div");
+    // let h1=document.getElementById("h");
+    h1[1].style.display="flex";
+}
+ </script>
+ </head>
+  <body>
+      <div>
+          <div>
+    <h1 id="h">Likith</h1>
+    </div>
+    <div>
+    <button onmouseover="change()" onmouseleave="dis()">color</button>
+    </div>
+    </div>
+  </body>
+</html>
