@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  <link rel="stylesheet" href="js.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+.App {
+  text-align: center;
+}
+
+.body {
+  background-color:white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(21, 1, 1);
+}
+
+.inputval{
+  width:200px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.plus{
+  height: 50px;
+  width: 50px;
+}
+.zero{
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+    </style>
+    <script>
+      function opetarion(){
+    let vl=document.getElementById("Value");
+    vl.value="1";
+  }
+    </script>
+  </head>
+  <body>
+    <div className="App">
+
+      <div className='body'>
+        <div className='calc'>
+          <div>
+            <input id="Value" className='App-inputval' type="text" name='value'/>
+          </div>
+          <div>
+            <button className='plus' onclick="opetarion()">1</button>
+            <button className='plus'>2</button>
+            <button className='plus'>3</button>
+            <button className='plus'>+</button>
+          </div>
+          <div>
+            <button className='plus'>4</button>
+            <button className='plus'>5</button>
+            <button className='plus'>6</button>
+            <button className='App-plus'>-</button>
+          </div>
+          <div>
+            <button className='plus'>7</button>
+            <button className='plus'>8</button>
+            <button className='plus'>9</button>
+            <button className='plus'>/</button>
+          </div>
+          <div>
+            <button className='zero'>0</button>
+            <button className='plus'>*</button>
+          </div>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
